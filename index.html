@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <title>Weather Info</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row header">
+            <h1>Weather Dashboard</h1>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-2 searchCol">
+                <div class="row searchBar">
+                    <nav class="navbar navbar-light bg-light">
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Destination"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Let's Go!</button>
+                        </form>
+                    </nav>
+                </div>
+                <div class="row searchHistory">
+                    <ul class="list-group">
+                        <li class="list-group-item"><button type="button"
+                                class="btn btn-outline-secondary">Secondary</button></li>
+                        <li class="list-group-item"><button type="button"
+                                class="btn btn-outline-secondary">Secondary</button></li>
+                        <li class="list-group-item"><button type="button"
+                                class="btn btn-outline-secondary">Secondary</button></li>
+                        <li class="list-group-item"><button type="button"
+                                class="btn btn-outline-secondary">Secondary</button></li>
+                        <li class="list-group-item"><button type="button"
+                                class="btn btn-outline-secondary">Secondary</button></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="col-md-10 dispayArea">
+                <div class="row todaysWeather">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                            <h1 class="display-4">Fluid jumbotron</h1>
+                            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of
+                                its parent.</p>
+                        </div>
+                    </div>
+                    <h1>This is todays weather</h1>
+                    <!-- This will display all of the current dates information -->
+                </div>
+                <div class="row fiveDayWeather">
+                    <div class=col-sm-2>
+                        <div class="day1 card card-body">
+                            <h5>next day</h5>
+                        </div>
+                        <!-- tom. weather info -->
+                    </div>
+                    <div class=col-sm-2>
+                        <div class="day2 card card-body">
+                            <h5>2nd day</h5>
+                            <!-- day2 weather info -->
+                        </div>
+                    </div>
+                    <div class=col-sm-2>
+                        <div class="day3 card card-body">
+                            <h5>3rd day</h5>
+                            <!-- day3 weather info -->
+                        </div>
+                    </div>
+                    <div class=col-sm-2>
+                        <div class="day4 card card-body">
+                            <h5>4th day</h5>
+                            <!-- day4 weather info -->
+                        </div>
+                    </div>
+                    <div class=col-sm-2>
+                        <div class="day5 card card-body">
+                            <h5>5th day</h5>
+                            <!-- day5 weather info -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    < <!-- Optional JavaScript -->
+      
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- Weather color codes to add/change classes of. -->
+<!-- if weather is good use bg-success -->
+<!-- if weather is not bad use bg-warning -->
+<!-- if weather is bad use bg-danger -->

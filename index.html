@@ -9,7 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+        <script src="moment.js"></script>
+        
+    <link href=style.css rel=stylesheet>
 
     <title>Weather Info</title>
 </head>
@@ -25,7 +27,7 @@
             <div class="col-md-2 searchCol">
                 <div class="row searchBar">
                     <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Destination" aria-label="Search">
+                        <input class="form-control mr-sm-2" id="searchInput" type="search" placeholder="Destination" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" id="inputButton">Let's Go!</button>
                     </form>
                 </div>
@@ -38,12 +40,14 @@
                 <div class="row todaysWeather">
                     <div class="jumbotron jumbotron-fluid">
                         <div class="container">
-                            <h1 class="display-4">Fluid jumbotron</h1>
-                            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of
-                                its parent.</p>
+                            <h1 class="display-4" id="cityName"></h1>
+                            <p class="lead-temp" id="currentTemp"></p>
+                            <p class="lead-hum" id="currentHum"></p>
+                            <img class="icons" id="currentWeatherType"></img>
+                            <p class="lead-uv" id="currentUV"></p><br>
                         </div>
                     </div>
-                    <h1>This is todays weather</h1>
+                    
                     <!-- This will display all of the current dates information -->
                 </div>
                 <div class="row fiveDayWeather">
